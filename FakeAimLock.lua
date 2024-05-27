@@ -1,3 +1,4 @@
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Void Falls games", "Synapse")
 local Tab = Window:NewTab("Main")
@@ -318,126 +319,18 @@ Section:NewButton("Aim Lock", "ButtonInfo", function()
     )
 end)
 
-local Tab = Window:NewTab("Da Downhill")
+local Tab = Window:NewTab("Fake Inject")
 local Section = Tab:NewSection("Main")
 Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
     local args = {
-    [1] = "[Da Downhill]: Successfully injected!",
+    [1] = "[" .. GameName .. "]: Successfully injected!",
     [2] = "All"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 wait(.1)
 local args = {
-    [1] = "[Da Downhill]: Successfully loaded Aim Lock!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-
-end)
-local Tab = Window:NewTab("Hood Strike")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
-    local args = {
-    [1] = "[Hood Strike]: Successfully injected!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = "[Hood Strike]: Successfully loaded Aim Lock!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-
-end)
-local Tab = Window:NewTab("Hood Sandbox")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
-    local args = {
-    [1] = "[Hood Sandbox]: Successfully injected!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = "[Hood Sandbox]: Successfully loaded Aim Lock!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-
-end)
-local Tab = Window:NewTab("De Hood")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
-    local args = {
-    [1] = "[De Hood]: Successfully injected!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = "[De Hood]: Successfully loaded Aim Lock!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-
-end)
-local Tab = Window:NewTab("Hood Aim")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
-    local args = {
-    [1] = "[Hood Aim]: Successfully injected!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = "[Hood Aim]: Successfully loaded Aim Lock!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-
-end)
-local Tab = Window:NewTab("Hood Bank")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
-    local args = {
-    [1] = "[Hood Bank]: Successfully injected!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = "[Hood Bank]: Successfully loaded Aim Lock!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-
-end)
-local Tab = Window:NewTab("Da Uphill")
-local Section = Tab:NewSection("Main")
-Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
-    local args = {
-    [1] = "[Da Uphill]: Successfully injected!",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = "[Da Uphill]: Successfully loaded Aim Lock!",
+    [1] = "[" .. GameName .. "]: Successfully loaded Aim Lock!",
     [2] = "All"
 }
 
