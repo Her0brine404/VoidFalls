@@ -20,6 +20,7 @@ getgenv().DontShootThesePeople = {  -- [ WHITELIST: List Of Who NOT To Shoot, ed
 
 	"Her0brine404";
 	"cherrylike_cake";
+	"alexisartajo1233";
 
 }
 
@@ -331,6 +332,13 @@ game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
 wait(.1)
 local args = {
     [1] = "[" .. GameName .. "]: Successfully loaded Aim Lock!",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+wait(.1)
+local args = {
+    [1] = "[AD]: gg/getcomet!",
     [2] = "All"
 }
 
