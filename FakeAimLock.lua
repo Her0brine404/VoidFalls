@@ -9,6 +9,9 @@ end)
 Section:NewButton("inf yield", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+Section:NewButton("Anti Lock", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/paradoxhubv2/paradoxhub/main/ANTILOCKV1.LUA",true))()
+end)
 Section:NewButton("Silent Aim (press this ------------------------>", "press on g to turn off", function()
     getgenv().Prediction =  (  .11  )   -- [ PREDICTION: Lower Prediction: Lower Ping | Higher Prediction: Higher Ping  ]
 
