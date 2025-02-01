@@ -703,7 +703,14 @@ Section:NewButton("Fake Inject (InChat)", "ButtonInfo", function()
 game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 wait(.1)
 local args = {
-    [1] = "[" .. GameName .. "]: Successfully loaded Aim Lock!",
+    [1] = "[" .. GameName .. "]: Successfully loaded Pixel Hub!",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+wait(.1)
+local args = {
+    [1] = "[AD]: .ġġ/nvr",
     [2] = "All"
 }
 
